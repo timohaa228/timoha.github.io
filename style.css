@@ -1,0 +1,119 @@
+/* стиль */
+
+.body
+{
+background-color: #000000;
+color: white;
+font-family: Cascadia Code;
+margin: 0;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.container
+{
+width: auto;
+margin: 10px;
+height: 90%;
+background: #8a8a8a;
+border:10px solid #ff8c00;
+border-radius: 50px;
+box-shadow: 15px 15px 30px #e100ff; 
+}
+
+
+.d2
+{
+font-size: 10px; 
+text-align: center;
+color: #8a8a8a;
+}
+
+.blok1
+{
+position:relative;
+top: 70px;
+}   
+
+.blok
+{
+width: 50px;
+height: 50px;
+background-color: black;
+position:absolute;
+left: 25px;
+top: 50px;
+animation-name: timoha_rotating, timoha_pics;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes timoha_rotating
+{
+0%, 100% {left: 50px; top: 50px; animation-timing-function: ease;}
+25% {left: 150px; top: 50px; animation-timing-function: ease-in;}
+50% {left: 150px; top: 150px; animation-timing-function: ease-out;}
+75% {left: 50px; top: 150px; animation-timing-function: ease-in-out;}
+}
+
+.blok:hover
+{
+animation-play-state: paused;
+}
+
+@keyframes timoha_pics
+{
+0%,100% {background: url(images/timoha.jpg);background-size:100%;}
+40% {background: url(images/timoha2.jpg);background-size:100%; background-repeat: no-repeat;}
+80% {background: url(images/timoha_energy.jpg);background-size:100%;}
+}
+
+.tg
+{
+width: 50px;
+height: 50px;
+border-radius:50%;
+background-color: #007BFF;
+color: white;
+border: 2px solid black;
+text-align: center;
+transition: all 0.3s ease-in-out;
+margin: 10px;
+font-size: 10px;
+}
+
+.tg:hover
+{
+background-color: #0056b3;
+transform: scale(1.05);
+}
+
+.p1
+{
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.spisok
+{
+margin-bottom: 25px;
+}
+
+.spisok:hover
+{
+transform: scale(1.02);
+}
+
+.href
+{
+color: #000000;
+text-decoration: none;
+}
+
+.gallery
+{
+margin-left: 10px;
+margin-right: 10px;
+}
+
